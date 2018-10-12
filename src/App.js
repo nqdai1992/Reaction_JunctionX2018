@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Reaction Junction X
+            Hung dep trai
           </a>
         </header>
       </div>
