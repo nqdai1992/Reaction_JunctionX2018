@@ -69,14 +69,13 @@ const styles = {
                  <div><Link to="/transaction-history" onClick={this.handleClick}>Transaction history</Link></div>
                  <div><Link to="/friends">Your friends're here!</Link></div>
                  <div><Link to="/group-list">You join these groups!</Link></div>
-                 
              </div>
          )
      }
  } 
 
 UserProfile.propTypes = {
- classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(UserProfile);
