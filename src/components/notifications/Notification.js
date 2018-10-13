@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import imagePath from "../assets/hung-pic.jpg";
+import imagePath from "../../assets/hung-pic.jpg";
+import Avatar from "@material-ui/core/Avatar";
+import classNames from "classnames";
 
 const styles = theme => ({
   root: {
@@ -24,13 +26,15 @@ class Notification extends React.Component {
           src={imagePath}
           className={classNames(classes.avatar)}
         />
-        <Typography variant="subtitle2" component="div">
-          This is a sheet of paper.
-        </Typography>
-        <Typography component="p">
-          Paper can be used to build surface or other elements for your
-          application.
-        </Typography>
+        <div>
+          <Typography variant="subtitle2" component="div">
+            This is a sheet of paper.
+          </Typography>
+          <Typography component="p">
+            Paper can be used to build surface or other elements for your
+            application.
+          </Typography>
+        </div>
       </Paper>
     );
   }
