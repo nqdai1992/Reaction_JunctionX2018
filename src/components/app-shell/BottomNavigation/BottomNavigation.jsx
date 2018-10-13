@@ -10,52 +10,18 @@ const bottomNavigation = props => (
   <Container>
     <AddActivity />
     <NavigationItem>
-      <NavLink
-        activeStyle={{
-          display: "block",
-          height: "64px",
-          lineHeight: "64px"
-        }}
-        to="/"
-      >
+      <NavLink exact to="/">
         Home
       </NavLink>
     </NavigationItem>
     <NavigationItem>
-      <NavLink
-        activeStyle={{
-          display: "block",
-          height: "64px",
-          lineHeight: "64px"
-        }}
-        to="/"
-      >
-        Chat Box
-      </NavLink>
+      <NavLink to="/chatbox">Chat Box</NavLink>
     </NavigationItem>
     <NavigationItem>
-      <NavLink
-        activeStyle={{
-          display: "block",
-          height: "64px",
-          lineHeight: "64px"
-        }}
-        to="/notifications"
-      >
-        Notification
-      </NavLink>
+      <NavLink to="/notifications">Notification</NavLink>
     </NavigationItem>
     <NavigationItem>
-      <NavLink
-        activeStyle={{
-          display: "block",
-          height: "64px",
-          lineHeight: "64px"
-        }}
-        to="/profile"
-      >
-        User profile
-      </NavLink>
+      <NavLink to="/profile">User profile</NavLink>
     </NavigationItem>
   </Container>
 );
