@@ -6,6 +6,11 @@
             "age": 26,
             "phoneNumber": "036 8273 625",
             "paymentMethod": "Credit card",
+            "friends": [
+                {"userName": "Nguyen Quoc Dai", "id": "eru1238fw3ds2"},
+                {"userName": "Thanh Nga", "id": "1238sdjfwi123us"},
+                {"userName": "Nguyen Minh Trung", "id": "iwqu12394wu12"}
+            ],
             "groups": [
                 {
                 "groupName": "Club Roman",
@@ -34,6 +39,10 @@
             "age": 26,
             "phoneNumber": "032 3451 293",
             "paymentMethod": "Debit Card",
+            "friends": [
+                {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                {"userName": "Nguyen Minh Trung", "id": "iwqu12394wu12"}
+            ],
             "groups": [
                 {
                 "groupName": "Club Roman",
@@ -52,6 +61,10 @@
             "age": 26,
             "phoneNumber": "036 1092 007",
             "paymentMethod": "E-wallet",
+            "friends": [
+                {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                {"userName": "Do Minh Quang", "id": "8372hwusiqq24w"}
+            ],
             "groups": [
                 {
                 "groupName": "Club Roman",
