@@ -3,6 +3,8 @@ import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import AppShell from "./layouts/AppShell";
 
+import UserProfile from './UserProfile/UserProfile';
+
 class App extends Component {
   render() {
     return (
