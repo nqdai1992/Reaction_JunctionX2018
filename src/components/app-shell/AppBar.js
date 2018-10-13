@@ -6,9 +6,11 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import AccountCircle from "@material-ui/icons/AccountCircle";
+import ArrowBack from "@material-ui/icons/ArrowBack";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-
+import history from "../../history";
+import { Link } from "react-router-dom";
 
 const styles = {
   root: {
@@ -26,7 +28,8 @@ const styles = {
 class MenuAppBar extends React.Component {
   state = {
     auth: true,
-    anchorEl: null
+    anchorEl: null,
+    history: history
   };
 
   handleMenu = event => {
@@ -35,6 +38,10 @@ class MenuAppBar extends React.Component {
 
   handleClose = () => {
     this.setState({ anchorEl: null });
+  };
+
+  handleGoBack = () => {
+    this.setState({ history: history.goBack() });
   };
 
   render() {
@@ -46,6 +53,9 @@ class MenuAppBar extends React.Component {
       <div className={classes.root}>
         <AppBar>
           <Toolbar>
+            <IconButton onClick={this.handleGoBack.bind(this)} color="inherit">
+              <ArrowBack />
+            </IconButton>
             <Typography
               variant="title"
               color="inherit"
@@ -66,18 +76,14 @@ class MenuAppBar extends React.Component {
                 <Menu
                   id="menu-appbar"
                   anchorEl={anchorEl}
-                  anchorOrigin={{
-                    vertical: "top",
-                    horizontal: "right"
-                  }}
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "right"
-                  }}
+                  anchorOrigin={{ vertical: "top", horizontal: "right" }}
+                  transformOrigin={{ vertical: "top", horizontal: "right" }}
                   open={open}
                   onClose={this.handleClose}
                 >
-                  <MenuItem onClick={this.handleClose}>Profile</MenuItem>
+                  <MenuItem onClick={this.handleClose}>
+                    <Link to="/sign_in">Sign in</Link>
+                  </MenuItem>
                   <MenuItem onClick={this.handleClose}>My account</MenuItem>
                 </Menu>
               </div>
