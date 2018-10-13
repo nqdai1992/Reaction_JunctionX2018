@@ -6,9 +6,14 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import AccountCircle from "@material-ui/icons/AccountCircle";
+import ArrowBack from "@material-ui/icons/ArrowBack";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+import history from "../../history";
+>>>>>>> 3340766b941809ad87107d708a6c889853a815eb
 
 const styles = {
   root: {
@@ -26,7 +31,8 @@ const styles = {
 class MenuAppBar extends React.Component {
   state = {
     auth: true,
-    anchorEl: null
+    anchorEl: null,
+    history: history
   };
 
   handleMenu = event => {
@@ -37,6 +43,10 @@ class MenuAppBar extends React.Component {
     this.setState({ anchorEl: null });
   };
 
+  handleGoBack = () => {
+    this.setState({ history: history.goBack() });
+  }
+
   render() {
     const { classes } = this.props;
     const { auth, anchorEl } = this.state;
@@ -46,6 +56,11 @@ class MenuAppBar extends React.Component {
       <div className={classes.root}>
         <AppBar>
           <Toolbar>
+            <IconButton 
+              onClick={this.handleGoBack.bind(this)}
+              color="inherit">
+              <ArrowBack></ArrowBack>
+            </IconButton>
             <Typography
               variant="title"
               color="inherit"

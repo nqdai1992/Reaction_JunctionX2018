@@ -42,7 +42,7 @@ const TransactionHistory = (props) => {
     const { classes } = props;
 
     return (
-    <div style={{marginTop: '30px', paddingBottom: '60px'}}>
+    <div style={{color: 'black', marginTop: '30px', paddingBottom: '60px'}}>
         <h2 style={{marginLeft: '30px'}}>Transaction History</h2>
 
         <Card className={classes.card}>
