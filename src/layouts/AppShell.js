@@ -1,6 +1,7 @@
 import React from "react";
 import AppBar from "../components/app-shell/AppBar";
 import Routes from "../router/routes";
+import BottomNavigation from "../components/app-shell/BottomNavigation/BottomNavigation";
 import styled from "styled-components";
 
 const AppContent = styled.main`
@@ -19,6 +20,7 @@ class AppShell extends React.Component {
         <AppContent>
           <Routes />
         </AppContent>
+        <BottomNavigation />
       </div>
     );
   }
