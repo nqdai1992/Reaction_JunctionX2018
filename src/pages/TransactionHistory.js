@@ -68,7 +68,7 @@ const TransactionHistory = (props) => {
                         </Icon>
                         <h3>Grocery</h3>
                     </div>
-                    <div>Saturday, 13-Oct-18 07:41:10 UTC</div>
+                    <div>Sunday, 14-Oct-18 05:10:33 UTC</div>
                 </div>
                 <div>6.000.000 vnd</div>
             </CardContent>
@@ -84,7 +84,7 @@ const TransactionHistory = (props) => {
                         </Icon>
                         <h3>From sis</h3>
                     </div>
-                    <div>Saturday, 13-Oct-18 07:41:10 UTC</div>
+                    <div>Monday, 15-Oct-18 03:22:10 UTC</div>
                 </div>
                 <div>3.000.000 vnd</div>
             </CardContent>

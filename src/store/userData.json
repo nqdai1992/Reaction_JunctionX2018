@@ -30,8 +30,12 @@
                 ],
                 "activity": "Run at Ho Tay"
                 }
-        
-            ]   
+            ],
+            "transactionHistory": [
+                {"transId": "13-10-18-0001-lending", "label": "lending", "content": "For friends", "amount": 10000000, "time": "Saturday, 13-Oct-18 07:41:10 UTC"},
+                {"transId": "14-10-18-0001-spending", "label": "spending", "content": "Grocery", "amount": 6000000, "time": "Sunday, 14-Oct-18 05:10:33 UTC"},
+                {"transId": "15-10-18-0001-borrowing", "label": "borrowing", "content": "From sis", "amount": 3000000, "time": "Monday, 15-Oct-18 03:22:10 UTC"}
+            ]
         },
         {
             "userName": "Nguyen Quoc Dai",
