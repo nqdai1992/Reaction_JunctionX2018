@@ -1,0 +1,86 @@
+{
+    "users" : [
+        {
+            "userName": "Dang Hoang Hung",
+            "id": "ssdf112312gfwD",
+            "age": 26,
+            "phoneNumber": "036 8273 625",
+            "paymentMethod": "Credit card",
+            "friends": [
+                {"userName": "Nguyen Quoc Dai", "id": "eru1238fw3ds2"},
+                {"userName": "Thanh Nga", "id": "1238sdjfwi123us"},
+                {"userName": "Nguyen Minh Trung", "id": "iwqu12394wu12"}
+            ],
+            "groups": [
+                {
+                "groupName": "Club Roman",
+                "members": [
+                    {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                    {"userName": "Nguyen Quoc Dai", "id": "eru1238fw3ds2"},
+                    {"userName": "Thanh Nga", "id": "1238sdjfwi123us"}
+                ],
+                "activity": "dinner at Gogi"
+                },
+                {
+                "groupName": "Sunday Funday Run",
+                "members": [
+                    {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                    {"userName": "Nguyen Minh Trung", "id": "iwqu12394wu12"},
+                    {"userName": "Do Minh Quang", "id": "8372hwusiqq24w"}
+                ],
+                "activity": "Run at Ho Tay"
+                }
+            ],
+            "transactionHistory": [
+                {"transId": "13-10-18-0001-lending", "label": "lending", "content": "For friends", "amount": 10000000, "time": "Saturday, 13-Oct-18 07:41:10 UTC"},
+                {"transId": "14-10-18-0001-spending", "label": "spending", "content": "Grocery", "amount": 6000000, "time": "Sunday, 14-Oct-18 05:10:33 UTC"},
+                {"transId": "15-10-18-0001-borrowing", "label": "borrowing", "content": "From sis", "amount": 3000000, "time": "Monday, 15-Oct-18 03:22:10 UTC"}
+            ]
+        },
+        {
+            "userName": "Nguyen Quoc Dai",
+            "id": "eru1238fw3ds2",
+            "age": 26,
+            "phoneNumber": "032 3451 293",
+            "paymentMethod": "Debit Card",
+            "friends": [
+                {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                {"userName": "Nguyen Minh Trung", "id": "iwqu12394wu12"}
+            ],
+            "groups": [
+                {
+                "groupName": "Club Roman",
+                "members": [
+                    {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                    {"userName": "Nguyen Quoc Dai", "id": "eru1238fw3ds2"},
+                    {"userName": "Thanh Nga", "id": "1238sdjfwi123us"}
+                ],
+                "activity": "dinner at Gogi"
+                }        
+            ]   
+        },
+        {
+            "userName": "Thanh Nga",
+            "id": "1238sdjfwi123us",
+            "age": 26,
+            "phoneNumber": "036 1092 007",
+            "paymentMethod": "E-wallet",
+            "friends": [
+                {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                {"userName": "Do Minh Quang", "id": "8372hwusiqq24w"}
+            ],
+            "groups": [
+                {
+                "groupName": "Club Roman",
+                "members": [
+                    {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                    {"userName": "Nguyen Quoc Dai", "id": "eru1238fw3ds2"},
+                    {"userName": "Thanh Nga", "id": "1238sdjfwi123us"}
+                ],
+                "activity": "dinner at Gogi"
+                }        
+            ]   
+        }
+
+    ]
+}
