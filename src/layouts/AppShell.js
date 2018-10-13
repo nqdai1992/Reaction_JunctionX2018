@@ -7,10 +7,12 @@ import styled from "styled-components";
 const AppContent = styled.main`
   flex-grow: 1;
   height: center;
-  color: palevioletred;
+  color: #555;
   height: "100vh";
   overflow: "auto";
   padding-top: 56px;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 class AppShell extends React.Component {
   render() {

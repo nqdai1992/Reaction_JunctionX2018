@@ -7,10 +7,13 @@ const CardContainer = styled.div`
 const Thumbnail = styled.div`
   flex: 3;
   height: 128px;
+  margin-right: 5px;
 `;
 
 const CardContent = styled.div`
   flex: 5;
+  text-align: left;
+  padding-left: 10px;
 `;
 
 const CardAction = styled.div`

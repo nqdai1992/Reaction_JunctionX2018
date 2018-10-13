@@ -21,7 +21,7 @@ const bottomNavigation = props => (
     </NavigationItem>
     <NavigationItem>
       <NavLink
-        to="/chatbox"
+        to="/chat"
         style={{
           backgroundImage: `url(${ChatIcon})`,
           backgroundRepeat: "no-repeat",

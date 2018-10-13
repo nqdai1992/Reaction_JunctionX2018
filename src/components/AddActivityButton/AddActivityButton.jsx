@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export const AddActivity = styled.div`
-  position: absolute;
+  position: fixed;
   right: 20px;
   margin-left: -32px;
   bottom: 80px;
