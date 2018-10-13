@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const AddActivity = styled.div`
   position: absolute;
   right: 20px;
@@ -15,6 +15,12 @@ export const AddActivity = styled.div`
   font-size: 48px;
 `;
 
-const addActivityButton = props => <AddActivity>+</AddActivity>;
+const addActivityButton = props => (
+  <AddActivity>
+    <Link style={{ color: "#fff" }} to="/created_form_group">
+      +
+    </Link>
+  </AddActivity>
+);
 
 export default addActivityButton;

@@ -11,10 +11,10 @@ function generateBasicAPI(path) {
       return axios.post(path, data);
     },
     update: (id, data) => {
-      return axios.patch(`${path}/${id}`, data);
+      return axios.put(`${path}/${id}`, data);
     },
     delete: id => {
-      return axios.delete(`${path}/${id}`, { params: { vendorId } });
+      return axios.delete(`${path}/${id}`);
     },
     get: (param, query) => {
       if (query) {
@@ -27,4 +27,7 @@ function generateBasicAPI(path) {
   };
 }
 
-export const user = generateBasicAPI("users");
+export default {
+  users: generateBasicAPI("users"),
+  groups: generateBasicAPI("groups")
+};
