@@ -27,17 +27,6 @@ const styles = {
  };
 
  class UserProfile extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isLinkClicked: false
-        };
-      }
-
-     handleClick = () => {
-         this.setState({ isLinkClicked:true })
-     }
-
      render() {
         const { classes } = this.props;
         const userProfile = 
@@ -53,7 +42,7 @@ const styles = {
                     <Button color="secondary">Edit</Button>
                 </div>
             </div>
-            <div style={{marginLeft: '50px'}}>
+            <div style={{marginLeft: '50px', lineHeight: '35px'}}>
                 <ul style={{listStyle: 'none'}}>
                     <li>Id: ssdf112312gfwD</li>
                     <li>Age: 26</li>
@@ -66,9 +55,17 @@ const styles = {
          return (
              <div>
                  {userProfile}
-                 <div><Link to="/transaction-history" onClick={this.handleClick}>Transaction history</Link></div>
-                 <div><Link to="/friends">Your friends're here!</Link></div>
-                 <div><Link to="/group-list">You join these groups!</Link></div>
+                 <div style={{margin: '30px', textAlign: 'left'}}>
+                    <Button variant="outlined" color="secondary" style={{display: "block", margin: "20px auto"}}>
+                        <Link to="/transaction-history">Transaction history</Link>
+                    </Button>
+                    <Button variant="outlined" color="secondary" style={{display: "block", margin: "20px auto"}}>
+                        <Link to="/friends">Your friends're here!</Link>
+                    </Button>
+                    <Button variant="outlined" color="secondary" style={{display: "block", margin: "20px auto"}}>
+                        <Link to="/group-list">Your precious groups!</Link>
+                    </Button>
+                 </div>
              </div>
          )
      }
