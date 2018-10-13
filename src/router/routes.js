@@ -11,8 +11,7 @@ pages.keys().forEach(fileName => {
 const RouterMap = () => (
   <div>
     <Route exact path="/" component={modules.Home} />
-    <Route path="/about" component={modules.About} />
-    <Route path="/topics" component={modules.Topics} />
+    <Route path="/notifications" component={modules.Notifications} />
   </div>
 );
 
