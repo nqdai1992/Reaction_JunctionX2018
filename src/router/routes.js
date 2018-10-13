@@ -13,6 +13,9 @@ const RouterMap = () => (
     <Route exact path="/" component={modules.Home} />
     <Route path="/notifications" component={modules.Notifications} />
     <Route path="/profile" component={modules.UserProfile} />
+    <Route path="/transaction-history" component={modules.TransactionHistory} />
+    <Route path="/friends" component={modules.Friends} />
+    <Route path="/group-list" component={modules.GroupList} />
   </div>
 );
 
