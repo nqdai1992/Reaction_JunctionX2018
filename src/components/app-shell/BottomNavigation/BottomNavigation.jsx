@@ -1,27 +1,53 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import {
-  Container,
-  NavigationItem,
-  AddActivity
-} from "./BottomNavigationStyle";
+import { Container, NavigationItem } from "./BottomNavigationStyle";
+import HomeIcon from "../../../assets/icons/home.svg";
+import ChatIcon from "../../../assets/icons/chat.svg";
+import NotiIcon from "../../../assets/icons/notifications.svg";
+import UserIcon from "../../../assets/icons/user.svg";
 
 const bottomNavigation = props => (
   <Container>
-    <AddActivity />
     <NavigationItem>
-      <NavLink exact to="/">
-        Home
-      </NavLink>
+      <NavLink
+        exact
+        to="/"
+        style={{
+          backgroundImage: `url(${HomeIcon})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center"
+        }}
+      />
     </NavigationItem>
     <NavigationItem>
-      <NavLink to="/chatbox">Chat Box</NavLink>
+      <NavLink
+        to="/chatbox"
+        style={{
+          backgroundImage: `url(${ChatIcon})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center"
+        }}
+      />
     </NavigationItem>
     <NavigationItem>
-      <NavLink to="/notifications">Notification</NavLink>
+      <NavLink
+        to="/notifications"
+        style={{
+          backgroundImage: `url(${NotiIcon})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center"
+        }}
+      />
     </NavigationItem>
     <NavigationItem>
-      <NavLink to="/profile">User profile</NavLink>
+      <NavLink
+        to="/profile"
+        style={{
+          backgroundImage: `url(${UserIcon})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center"
+        }}
+      />
     </NavigationItem>
   </Container>
 );

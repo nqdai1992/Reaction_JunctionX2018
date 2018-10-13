@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PromotionCards from "../components/PromotionList/PromotionCards";
 import { promotionList } from "../store/data";
+import AddAcitvityButton from "../components/AddActivityButton/AddActivityButton";
 
 export default class Home extends Component {
   state = {
@@ -13,6 +14,7 @@ export default class Home extends Component {
       <div>
         <h1>Welcome Choe</h1>
         <PromotionCards promotionList={this.state.promotionList} />
+        <AddAcitvityButton />
       </div>
     );
   }
