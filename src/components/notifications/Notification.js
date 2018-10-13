@@ -3,33 +3,39 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import styled from "styled-components";
+import imagePath from "../assets/hung-pic.jpg";
 
 const styles = theme => ({
   root: {
     ...theme.mixins.gutters(),
     paddingTop: theme.spacing.unit * 2,
-    paddingBottom: theme.spacing.unit * 2
+    paddingBottom: theme.spacing.unit * 2,
+    textAlign: "left"
   }
 });
 
-const NotificaitonWrapper = styled.div`
-  height: 50px;
-  width: 100%;
-`;
 class Notification extends React.Component {
   render() {
+    const { classes } = this.props;
     return (
-      <NotificaitonWrapper>
-        <Paper className={classes.root} elevation={1}>
-          <span>Hung</span>
-          <span>Content</span>
-        </Paper>
-      </NotificaitonWrapper>
+      <Paper className={classes.root} elevation={1}>
+        <Avatar
+          alt="Anh avarta cua Hung"
+          src={imagePath}
+          className={classNames(classes.avatar)}
+        />
+        <Typography variant="subtitle2" component="div">
+          This is a sheet of paper.
+        </Typography>
+        <Typography component="p">
+          Paper can be used to build surface or other elements for your
+          application.
+        </Typography>
+      </Paper>
     );
   }
 }
 Notification.propTypes = {
   classes: PropTypes.object.isRequired
 };
-export default Notification;
+export default withStyles(styles)(Notification);
