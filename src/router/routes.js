@@ -13,6 +13,7 @@ const RouterMap = () => (
     <Route exact path="/" component={modules.Home} />
     <Route path="/notifications" component={modules.Notifications} />
     <Route path="/profile" component={modules.UserProfile} />
+    <Route path="/add_activity" component={modules.AddActivityForm} />
   </div>
 );
 
