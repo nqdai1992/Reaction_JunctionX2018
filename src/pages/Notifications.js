@@ -19,7 +19,7 @@ class Notifications extends React.Component {
   render() {
     return (
       <div>
-        <NotificationList notifications={this.state.notifications} />
+        <NotificationList />
       </div>
     );
   }

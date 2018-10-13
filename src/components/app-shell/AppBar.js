@@ -9,11 +9,7 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import ArrowBack from "@material-ui/icons/ArrowBack";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-<<<<<<< HEAD
-import { Link } from "react-router-dom";
-=======
 import history from "../../history";
->>>>>>> 3340766b941809ad87107d708a6c889853a815eb
 
 const styles = {
   root: {
@@ -45,7 +41,7 @@ class MenuAppBar extends React.Component {
 
   handleGoBack = () => {
     this.setState({ history: history.goBack() });
-  }
+  };
 
   render() {
     const { classes } = this.props;
@@ -56,10 +52,8 @@ class MenuAppBar extends React.Component {
       <div className={classes.root}>
         <AppBar>
           <Toolbar>
-            <IconButton 
-              onClick={this.handleGoBack.bind(this)}
-              color="inherit">
-              <ArrowBack></ArrowBack>
+            <IconButton onClick={this.handleGoBack.bind(this)} color="inherit">
+              <ArrowBack />
             </IconButton>
             <Typography
               variant="title"
