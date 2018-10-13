@@ -11,6 +11,11 @@ export const Container = styled.ul`
 
 export const NavigationItem = styled.li`
   flex: 1;
+  > a {
+    display: block;
+    height: 64px;
+    line-height: 64px;
+  }
 `;
 
 export const AddActivity = styled.div`
