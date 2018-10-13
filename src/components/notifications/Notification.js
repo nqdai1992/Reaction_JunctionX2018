@@ -29,5 +29,7 @@ class Notification extends React.Component {
     );
   }
 }
-
+Notification.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 export default Notification;
