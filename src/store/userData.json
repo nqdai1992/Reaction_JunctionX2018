@@ -1,0 +1,69 @@
+{
+    "user" : [
+        {
+            "userName": "Dang Hoang Hung",
+            "id": "ssdf112312gfwD",
+            "age": 26,
+            "phoneNumber": "036 8273 625",
+            "paymentMethod": "Credit card",
+            "groups": [
+                {
+                "groupName": "Club Roman",
+                "members": [
+                    {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                    {"userName": "Nguyen Quoc Dai", "id": "eru1238fw3ds2"},
+                    {"userName": "Thanh Nga", "id": "1238sdjfwi123us"}
+                ],
+                "activity": "dinner at Gogi"
+                },
+                {
+                "groupName": "Sunday Funday Run",
+                "members": [
+                    {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                    {"userName": "Nguyen Minh Trung", "id": "iwqu12394wu12"},
+                    {"userName": "Do Minh Quang", "id": "8372hwusiqq24w"}
+                ],
+                "activity": "Run at Ho Tay"
+                }
+        
+            ]   
+        },
+        {
+            "userName": "Nguyen Quoc Dai",
+            "id": "eru1238fw3ds2",
+            "age": 26,
+            "phoneNumber": "032 3451 293",
+            "paymentMethod": "Debit Card",
+            "groups": [
+                {
+                "groupName": "Club Roman",
+                "members": [
+                    {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                    {"userName": "Nguyen Quoc Dai", "id": "eru1238fw3ds2"},
+                    {"userName": "Thanh Nga", "id": "1238sdjfwi123us"}
+                ],
+                "activity": "dinner at Gogi"
+                }        
+            ]   
+        },
+        {
+            "userName": "Thanh Nga",
+            "id": "1238sdjfwi123us",
+            "age": 26,
+            "phoneNumber": "036 1092 007",
+            "paymentMethod": "E-wallet",
+            "groups": [
+                {
+                "groupName": "Club Roman",
+                "members": [
+                    {"userName": "Dang Hoang Hung", "id": "ssdf112312gfwD"},
+                    {"userName": "Nguyen Quoc Dai", "id": "eru1238fw3ds2"},
+                    {"userName": "Thanh Nga", "id": "1238sdjfwi123us"}
+                ],
+                "activity": "dinner at Gogi"
+                }        
+            ]   
+        }
+
+    ]
+}
