@@ -40,7 +40,7 @@ const bottomNavigation = props => (
           height: "64px",
           lineHeight: "64px"
         }}
-        to="/"
+        to="/notifications"
       >
         Notification
       </NavLink>

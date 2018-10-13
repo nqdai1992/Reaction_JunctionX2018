@@ -13,6 +13,17 @@ const styles = theme => ({
     paddingTop: theme.spacing.unit * 2,
     paddingBottom: theme.spacing.unit * 2,
     textAlign: "left"
+  },
+  avatar: {
+    maxWidth: "70px",
+    display: "inline-block",
+    marginRight: "10px",
+    verticalAlign: "middle"
+  },
+  contentNotification: {
+    width: "calc(100% - 80px)",
+    display: "inline-block",
+    verticalAlign: "middle"
   }
 });
 
@@ -26,7 +37,7 @@ class Notification extends React.Component {
           src={imagePath}
           className={classNames(classes.avatar)}
         />
-        <div>
+        <div className={classes.contentNotification}>
           <Typography variant="subtitle2" component="div">
             This is a sheet of paper.
           </Typography>

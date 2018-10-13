@@ -1,8 +1,8 @@
 import React from "react";
-import Notification from "./Notification";
+import NotificationItem from "./NotificationItem";
 
 const generateNotification = number => {
-  return Array.from(Array(number).keys()).map(() => <Notification />);
+  return Array.from(Array(number).keys()).map(() => <NotificationItem />);
 };
 
 class Notifications extends React.Component {
