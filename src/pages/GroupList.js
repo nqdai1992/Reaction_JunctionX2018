@@ -29,6 +29,7 @@ const styles = {
     },
     chip: {
       marginRight: 8,
+      marginTop: 8,
     },
     bigAvatar: {
       width: 60,
