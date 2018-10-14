@@ -60,20 +60,6 @@ export default class Chat extends Component {
     });
     db.collection("groups")
       .doc("P5N7gjJrMegCNqvyO0a3")
-      .get()
-      .then(function(doc) {
-        if (doc.exists) {
-          console.log("Document data:", doc.data());
-        } else {
-          // doc.data() will be undefined in this case
-          console.log("No such document!");
-        }
-      })
-      .catch(function(error) {
-        console.log("Error getting document:", error);
-      });
-    db.collection("groups")
-      .doc("P5N7gjJrMegCNqvyO0a3")
       .onSnapshot(function(doc) {
         console.log(doc);
       });
@@ -85,7 +71,7 @@ export default class Chat extends Component {
         <ChatContent>
           <YourMessage text="your message" />
           <OtherMessage text="other message" />
-          <BillMessage title="asda" price="10000" />
+          <BillMessage title="Shopping" price="10.0000 vnd" />
           <Input
             fullWidth
             type="text"

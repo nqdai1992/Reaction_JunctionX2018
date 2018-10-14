@@ -103,6 +103,7 @@ class AddActivitiesForm extends React.Component {
         await API.users.update(id, newData);
       });
     }
+    window.location = "/group-chat";
   };
   handleCloseModal = () => {
     this.setState({ openModal: false });
