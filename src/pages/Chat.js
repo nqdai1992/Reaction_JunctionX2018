@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import OrderRecordButton from "../components/OrderRecordButton/OrderRecordButton";
 import styled from "styled-components";
+import Order from "../containers/Order/OrderPanel";
 
 const ChatWrapper = styled.div`
   position: relative;
@@ -12,7 +12,7 @@ export default class Chat extends Component {
   render() {
     return (
       <ChatWrapper>
-        <OrderRecordButton />
+        <Order />
       </ChatWrapper>
     );
   }

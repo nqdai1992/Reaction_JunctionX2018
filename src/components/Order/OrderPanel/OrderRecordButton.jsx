@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import OrderCat from "../../../assets/icons/order-cat-2.png";
 
 const IconWrapper = styled.div`
-  position: fixed;
-  bottom: 84px;
-  right: 24px;
-  width: 64px;
-  height: 64px;
+  width: 116px;
+  height: 116px;
+  margin-right: 20px;
   border-radius: 50%;
-  background: #3b4dfb;
+  border: 1px solid #ddd;
+  background-image: url(${OrderCat});
+  background-size: 120%;
+  background-position: center;
 
   i {
     font-size: 42px;

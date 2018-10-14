@@ -10,9 +10,7 @@ const AppContent = styled.main`
   color: #555;
   height: "100vh";
   overflow: "auto";
-  padding-top: 56px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 56px 10px 64px;
 `;
 class AppShell extends React.Component {
   render() {

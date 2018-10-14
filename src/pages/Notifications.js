@@ -6,7 +6,7 @@ const db = firebase.firestore();
 const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 class Notifications extends React.Component {
-  state = {
+  /* state = {
     notifications: currentUser.notifications || []
   };
   componentDidMount() {
@@ -15,7 +15,7 @@ class Notifications extends React.Component {
       .onSnapshot(function(doc) {
         console.log(doc);
       });
-  }
+  } */
   render() {
     return (
       <div>

@@ -8,12 +8,24 @@ const Thumbnail = styled.div`
   flex: 3;
   height: 128px;
   margin-right: 5px;
+
+  img {
+    object-fit: cover;
+    width: 128px;
+    height: 100px;
+  }
 `;
 
 const CardContent = styled.div`
   flex: 5;
   text-align: left;
   padding-left: 10px;
+
+  h6 {
+    color: orange;
+    margin-top: 20px;
+    font-size: 16px;
+  }
 `;
 
 const CardAction = styled.div`
@@ -30,9 +42,9 @@ const promotionCard = props => (
       />
     </Thumbnail>
     <CardContent>
-      <h4>{props.name}</h4>
-      <h6>{props.category}</h6>
-      <h3>{props.promotion}</h3>
+      <h3>{props.name}</h3>
+      <h4>{props.category}</h4>
+      <h6>{props.promotion}</h6>
     </CardContent>
     <CardAction>
       <div>Like</div>
