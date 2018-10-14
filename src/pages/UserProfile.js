@@ -6,7 +6,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import imagePath from '../assets/hung-pic.jpg';
 import { Link } from 'react-router-dom';
-import USER from '../store/userData.json';
 
 const styles = {
    color: {
@@ -28,12 +27,7 @@ const styles = {
  };
 
  class UserProfile extends Component {
-     state = {
-         user: USER
-     }
-
      render() {
-        console.log(this.state.user);
         const { classes } = this.props;
         const userProfile = 
         (<div className={classes.color}>

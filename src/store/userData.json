@@ -3,6 +3,7 @@
         {
             "userName": "Dang Hoang Hung",
             "id": "ssdf112312gfwD",
+            "avatar": "/assets/hung-pic.jpg",
             "age": 26,
             "phoneNumber": "036 8273 625",
             "paymentMethod": "Credit card",
@@ -40,6 +41,7 @@
         {
             "userName": "Nguyen Quoc Dai",
             "id": "eru1238fw3ds2",
+            "avatar": "/assets/anh-dai.jpg",
             "age": 26,
             "phoneNumber": "032 3451 293",
             "paymentMethod": "Debit Card",
@@ -62,6 +64,7 @@
         {
             "userName": "Thanh Nga",
             "id": "1238sdjfwi123us",
+            "avatar": "anh-choe.jpg",
             "age": 26,
             "phoneNumber": "036 1092 007",
             "paymentMethod": "E-wallet",
