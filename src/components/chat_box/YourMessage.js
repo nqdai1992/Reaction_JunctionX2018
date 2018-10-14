@@ -6,12 +6,12 @@ const AlignLeft = styled.div`
 const MessageWrapper = styled.div`
   display: inline-block;
   max-width: 50vw;
-  border: 1px solid #3f51b5;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 20px;
+  padding: 10px 20px;
   margin-bottom: 10px;
   text-align: left;
-  color: #3f51b5;
+  color: #fafafa;
+  background-color: #3743ef;
 `;
 class YourMessage extends React.Component {
   render() {

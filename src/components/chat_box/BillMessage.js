@@ -4,8 +4,8 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 const Wrapper = styled.div`
-  background-color: #3f51b5;
-  color: #fff;
+  background-color: #fafafa;
+  border: 1px solid #1e000033;
   border-radius: 5px;
   padding: 5px;
   margin-bottom: 10px;
@@ -27,7 +27,7 @@ class OtherMessage extends React.Component {
             <div>{this.props.price}</div>
           </Grid>
           <Grid xs={3}>
-            <Button size="small" variant="outlined" className={classes.button}>
+            <Button size="small" variant="outlined">
               Join
             </Button>
           </Grid>

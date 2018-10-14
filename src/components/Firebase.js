@@ -7,5 +7,5 @@ var config = {
   storageBucket: "junctionx2018.appspot.com",
   messagingSenderId: "383031246602"
 };
-firebase.initializeApp(config);
-export default firebase;
+var app = firebase.initializeApp(config);
+export default app;
