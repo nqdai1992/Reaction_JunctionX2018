@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import imagePath from "../../assets/hung-pic.jpg";
 import Avatar from "@material-ui/core/Avatar";
 import classNames from "classnames";
 
@@ -34,7 +33,7 @@ class Notification extends React.Component {
       <Paper className={classes.root} elevation={1}>
         <Avatar
           alt="Anh avarta cua Hung"
-          src={imagePath}
+          src={this.props.image}
           className={classNames(classes.avatar)}
         />
         <div className={classes.contentNotification}>
