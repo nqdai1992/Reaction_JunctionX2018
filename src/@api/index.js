@@ -8,9 +8,11 @@ const axios = Axios.create({
 function generateBasicAPI(path) {
   return {
     create: data => {
+      data.createdAt = Date.now();
       return axios.post(path, data);
     },
     update: (id, data) => {
+      data.updatedAt = Date.now();
       return axios.put(`${path}/${id}`, data);
     },
     delete: id => {
