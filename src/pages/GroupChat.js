@@ -16,16 +16,28 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    cursor: 'pointer',
   },
   avatar: {
+    width: 60,
+    height: 60,
     margin: 20,
   },
   time: {
     margin: 10,
   },
+  circleButton: {
+        margin: '0 auto',
+      width: 25,
+      height: 25,
+      backgroundColor: '#3b4dfb',
+      borderRadius: '50%',
+      color: 'white',
+  },
   oneLine: {
     margin: 10,
     display: 'flex',
+    alignItems: 'center',
     textAlign: "left",
   },
 });
@@ -42,13 +54,13 @@ const GroupChat = (props) => {
                 </div>
                 <div>
                     <h3>Da Nang Trip!!</h3>
-                    <div>Tien Vi</div>
-                    <div>Added expenses</div>
+                    <div style={{}}>Tien Vi</div>
+                    <div style={{color: 'violet'}}>Added expenses</div>
                 </div>
             </div>
             <div>
                 <div className={classes.time}>16:00</div>
-                <div>11</div>
+                <div className={classes.circleButton}>11</div>
             </div>
         </div>
         <hr/>
@@ -60,13 +72,11 @@ const GroupChat = (props) => {
                 </div>
                 <div>
                     <h3>Da Nang Trip!!</h3>
-                    <div>Tien Vi</div>
-                    <div>Added expenses</div>
+                    <div style={{color: 'violet'}}>Added expenses</div>
                 </div>
             </div>
             <div>
-                <div className={classes.time}>16:00</div>
-                <div>11</div>
+                <div className={classes.time}>8:00</div>
             </div>
         </div>
         <hr/>
@@ -78,13 +88,11 @@ const GroupChat = (props) => {
                 </div>
                 <div>
                     <h3>Da Nang Trip!!</h3>
-                    <div>Tien Vi</div>
-                    <div>Added expenses</div>
+                    <div style={{color: 'violet'}}>Spend money request</div>
                 </div>
             </div>
             <div>
-                <div className={classes.time}>16:00</div>
-                <div>11</div>
+                <div className={classes.time}>11:00</div>
             </div>
         </div>
         <hr/>
