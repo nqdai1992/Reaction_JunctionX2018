@@ -20,6 +20,7 @@ const RouterMap = () => (
     <Route path="/add_activity" component={modules.AddActivityForm} />
     <Route path="/sign_in" component={modules.SignIn} />
     <Route path="/created_form_group" component={modules.AddActivityForm} />
+    <Route path="/chat_box" component={modules.ChatBox} />
   </div>
 );
 
