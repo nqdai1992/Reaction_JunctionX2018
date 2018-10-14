@@ -19,9 +19,10 @@ const bottomNavigation = props => (
         }}
       />
     </NavigationItem>
-    <NavigationItem>
+    <NavigationItem clicked={props.groupChatClicked}>
       <NavLink
-        to="/chat"
+        to="/group-chat"
+        // onClicked={console.log(history.location.pathname)}
         style={{
           backgroundImage: `url(${ChatIcon})`,
           backgroundRepeat: "no-repeat",

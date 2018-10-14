@@ -13,14 +13,22 @@ const AppContent = styled.main`
   padding: 56px 10px 64px;
 `;
 class AppShell extends React.Component {
+  state = {
+    isChatBox: false
+  }
+
+  handleGroupBoxClicked = () => {
+    this.setState({ isChatBox: true });
+  }
+
   render() {
     return (
       <div>
         <AppBar openDrawer={this.openDrawer} />
-        <AppContent>
-          <Routes />
+        <AppContent props={this.state.isChatBox}>
+           <Routes />
         </AppContent>
-        <BottomNavigation />
+        <BottomNavigation groupChatClicked={this.handleGroupBoxClicked.bind(this)}/>
       </div>
     );
   }
